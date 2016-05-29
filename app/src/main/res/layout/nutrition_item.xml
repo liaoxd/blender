@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="30dp"
+    android:background="@color/white"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/nutritionNameTextView"
+        android:layout_width="60dp"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:textColor="#383838"
+        android:textSize="14sp" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:background="@color/white"
+        android:padding="5dp">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="20dp"
+            android:layout_weight="1"
+            android:background="@drawable/nutritionback"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/pPercentLinearLayout"
+                android:layout_width="0dp"
+                android:layout_height="20dp"
+                android:layout_gravity="right"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/nPercentLinearLayout"
+                android:layout_width="0dp"
+                android:layout_height="20dp"
+                android:layout_gravity="right"
+                android:layout_weight="0.2"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="@drawable/rightbutton1" />
+
+</LinearLayout>

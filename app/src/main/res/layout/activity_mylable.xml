@@ -1,0 +1,182 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eeeeee"
+    android:orientation="vertical"
+    tools:context="com.halfcigarette.dietitian.ui.activity.MylableActivity">
+
+    <com.halfcigarette.dietitian.ui.custom.TitleBar
+        android:id="@+id/mylable_title_bar"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp">
+
+    </com.halfcigarette.dietitian.ui.custom.TitleBar>
+
+    <!-- 一段空白-->
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="10dp"
+        android:background="#ffffff"></LinearLayout>
+
+    <!-- 一条分割线-->
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="#ADADAD"></LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginLeft="10dp"
+            android:gravity="center_vertical"
+            android:text="家有孕妇"
+            android:textColor="#383838"
+            android:textSize="16dp" />
+
+        <!-- 一条分割线-->
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="#ADADAD"></LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="100dp">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <CheckBox
+                    android:id="@+id/cb_lable_checkBox1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="孕早期 1-12周" />
+
+                <CheckBox
+                    android:id="@+id/cb_lable_checkBox2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="孕中期 13-27周" />
+
+                <CheckBox
+                    android:id="@+id/cb_lable_checkBox3"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="孕晚期 28-40周" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <CheckBox
+                    android:id="@+id/cb_lable_checkBox4"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="产后-产后1周" />
+
+                <CheckBox
+                    android:id="@+id/cb_lable_checkBox5"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="产后 1-3周" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <!-- 一段空白-->
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="15dp"
+        android:background="#eeeeee"></LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginLeft="10dp"
+            android:gravity="center_vertical"
+            android:text="家有病号"
+            android:textColor="#383838"
+            android:textSize="16dp" />
+
+        <!-- 一条分割线-->
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="#ADADAD"></LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="100dp">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <CheckBox
+                    android:id="@+id/cb_lable_checkBox6"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="感冒发烧" />
+
+                <CheckBox
+                    android:id="@+id/cb_lable_checkBox7"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="支气管炎，哮喘，肺炎" />
+
+                <CheckBox
+                    android:id="@+id/cb_lable_checkBox8"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="胃部疾病" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <CheckBox
+                    android:id="@+id/cb_lable_checkBox9"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="上火，口腔溃疡" />
+
+                <CheckBox
+                    android:id="@+id/cb_lable_checkBox10"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="肝炎" />
+
+                <CheckBox
+                    android:id="@+id/cb_lable_checkBox11"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="糖尿病" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

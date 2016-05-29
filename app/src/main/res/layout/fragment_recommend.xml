@@ -1,0 +1,42 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="500dp"
+    android:orientation="vertical"
+    android:weightSum="1"
+    tools:context="com.halfcigarette.dietitian.ui.fragment.RecommendFragment">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <FrameLayout
+                android:layout_width="fill_parent"
+                android:layout_height="160dp"
+                android:background="#f8cb56">
+
+
+                <ImageView
+                    android:layout_width="283dp"
+                    android:layout_height="140dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="0.05"
+                    android:src="@drawable/recommend_pan" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="开始料理"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+            </FrameLayout>
+        </LinearLayout>
+
+
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,125 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.halfcigarette.dietitian.ui.activity.AddfoodActivity">
+
+    <com.halfcigarette.dietitian.ui.custom.TitleBar
+        android:id="@+id/addFoodTitleBar"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp">
+
+    </com.halfcigarette.dietitian.ui.custom.TitleBar>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:gravity="center_vertical"
+            android:text="新增一个食材:"
+            android:textColor="#383838"
+            android:textSize="20sp" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="center_vertical"
+            android:focusableInTouchMode="true"
+            android:orientation="horizontal">
+
+            <TextView
+
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="2"
+                android:text="名称："
+                android:textColor="#383838"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/et_MSCForName"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="3" />
+
+            <ImageView
+                android:id="@+id/iv_MSCForName"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:layout_margin="8dp"
+                android:src="@drawable/yuyin1" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="2"
+                android:text="重量（克）："
+                android:textColor="#383838"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/et_MSCForWeight"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="3" />
+
+            <ImageView
+                android:id="@+id/iv_MSCForWeight"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:layout_margin="8dp"
+                android:src="@drawable/yuyin1" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <com.gc.materialdesign.views.ButtonRectangle
+                android:id="@+id/AddFoodConfirmButton"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:background="#26a69a"
+                android:onClick="OnClick"
+                android:text="确认" />
+
+            <com.gc.materialdesign.views.ButtonRectangle
+                android:id="@+id/AddFoodClearButton"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:background="#26a69a"
+                android:onClick="OnClick"
+                android:text="清空" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/DetialFoodList"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+    </ListView>
+
+
+</LinearLayout>

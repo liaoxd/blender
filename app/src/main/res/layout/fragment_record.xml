@@ -1,0 +1,235 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:materialdesign="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context="com.halfcigarette.dietitian.ui.fragment.RecordFragment">
+
+    <com.halfcigarette.dietitian.ui.custom.TitleBar
+        android:id="@+id/record_title_bar"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp" />
+    <!-- TODO: Update blank fragment layout -->
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:gravity="center_vertical"
+                android:text="用餐人信息："
+                android:textColor="#383838"
+                android:textSize="18sp" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="75dp"
+                android:orientation="horizontal">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rv_horizontalpeople"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:clickable="true" />
+
+                <com.gc.materialdesign.views.ButtonFloat
+                    android:id="@+id/bt_addpersondialog"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="#1E88E5"
+                    materialdesign:animate="false"
+                    materialdesign:iconDrawable="@drawable/ic_action_new" />
+
+            </LinearLayout>
+
+            <!-- 一段空白-->
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="15dp"
+                android:background="#eeeeee"></LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:padding="5dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:gravity="left|center_vertical"
+                    android:text="料理食材："
+                    android:textColor="#383838"
+                    android:textSize="18sp" />
+
+                <ImageView
+                    android:layout_width="260dp"
+                    android:layout_height="fill_parent"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginRight="6dp"
+                    android:src="@drawable/nutritionrangeimage" />
+            </RelativeLayout>
+
+            <ListView
+                android:id="@+id/recordElementListView"
+                android:layout_width="fill_parent"
+                android:layout_height="180dp"></ListView>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal">
+
+
+                <!--<com.gc.materialdesign.views.ButtonRectangle-->
+                <!--android:id="@+id/addRecordElementButton"-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_height="50dp"-->
+                <!--android:layout_weight="1"-->
+                <!--android:background="#26a69a"-->
+                <!--android:gravity="center"-->
+                <!--android:text="添加营养元素" />-->
+
+                <com.gc.materialdesign.views.ButtonRectangle
+                    android:id="@+id/recordAnalyzeButton"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:background="#26a69a"
+                    android:gravity="center"
+                    android:text="营养评分" />
+            </LinearLayout>
+
+            <com.github.mikephil.charting.charts.PieChart
+                android:id="@+id/myTestPieChart"
+                android:layout_width="fill_parent"
+                android:layout_height="250dp">
+
+            </com.github.mikephil.charting.charts.PieChart>
+
+            <!-- 一段空白-->
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="15dp"
+                android:background="#eeeeee"></LinearLayout>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:text="推荐运动时长：(用餐人运动总量)"
+                android:textColor="#383838"
+                android:textSize="20sp" />
+
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="110dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="fill_parent"
+                        android:layout_height="80dp"
+                        android:padding="10dp"
+                        android:src="@drawable/run" />
+
+                    <TextView
+                        android:id="@+id/tv_runtime"
+                        android:layout_width="fill_parent"
+                        android:layout_height="30dp"
+                        android:text="跑步0小时"
+                        android:textColor="#383838"
+                        android:textSize="15sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="fill_parent"
+                        android:layout_height="80dp"
+                        android:padding="10dp"
+                        android:src="@drawable/cycle" />
+
+                    <TextView
+                        android:id="@+id/tv_cycletime"
+                        android:layout_width="fill_parent"
+                        android:layout_height="30dp"
+                        android:text="骑车0小时"
+                        android:textColor="#383838"
+                        android:textSize="15sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="fill_parent"
+                        android:layout_height="80dp"
+                        android:padding="10dp"
+                        android:src="@drawable/swim" />
+
+                    <TextView
+                        android:id="@+id/tv_swimtime"
+                        android:layout_width="fill_parent"
+                        android:layout_height="30dp"
+                        android:text="游泳0小时"
+                        android:textColor="#383838"
+                        android:textSize="15sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="fill_parent"
+                        android:layout_height="80dp"
+                        android:padding="10dp"
+                        android:src="@drawable/badminton" />
+
+                    <TextView
+                        android:id="@+id/tv_badmintontime"
+                        android:layout_width="fill_parent"
+                        android:layout_height="30dp"
+                        android:text="羽毛球0小时"
+                        android:textColor="#383838"
+                        android:textSize="15sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
