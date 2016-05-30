@@ -9,7 +9,7 @@
     <com.halfcigarette.dietitian.ui.custom.TitleBar
         android:id="@+id/mylable_title_bar"
         android:layout_width="fill_parent"
-        android:layout_height="50dp">
+        android:layout_height="@dimen/toolBarHigh">
 
     </com.halfcigarette.dietitian.ui.custom.TitleBar>
 
@@ -17,13 +17,13 @@
     <LinearLayout
         android:layout_width="fill_parent"
         android:layout_height="10dp"
-        android:background="#ffffff"></LinearLayout>
+        android:background="#ffffff"/>
 
     <!-- 一条分割线-->
     <LinearLayout
         android:layout_width="fill_parent"
         android:layout_height="1dp"
-        android:background="#ADADAD"></LinearLayout>
+        android:background="#ADADAD"/>
 
     <LinearLayout
         android:layout_width="fill_parent"
@@ -44,7 +44,7 @@
         <LinearLayout
             android:layout_width="fill_parent"
             android:layout_height="1dp"
-            android:background="#ADADAD"></LinearLayout>
+            android:background="#ADADAD"/>
 
         <LinearLayout
             android:layout_width="fill_parent"
@@ -100,7 +100,7 @@
     <LinearLayout
         android:layout_width="fill_parent"
         android:layout_height="15dp"
-        android:background="#eeeeee"></LinearLayout>
+        android:background="#eeeeee"/>
 
     <LinearLayout
         android:layout_width="fill_parent"
@@ -121,7 +121,7 @@
         <LinearLayout
             android:layout_width="fill_parent"
             android:layout_height="1dp"
-            android:background="#ADADAD"></LinearLayout>
+            android:background="#ADADAD"/>
 
         <LinearLayout
             android:layout_width="fill_parent"

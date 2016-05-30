@@ -18,7 +18,6 @@ import com.halfcigarette.dietitian.beans.Tags;
 import com.halfcigarette.dietitian.data.JsonParser1;
 import com.halfcigarette.dietitian.data.SimpleFoodAdapter;
 import com.halfcigarette.dietitian.data.StaticData;
-import com.halfcigarette.dietitian.ui.custom.TitleBar;
 import com.halfcigarette.dietitian.utils.Logger;
 import com.iflytek.cloud.ErrorCode;
 import com.iflytek.cloud.InitListener;
@@ -36,11 +35,8 @@ import java.util.LinkedHashMap;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-import butterknife.Bind;
-
 public class AddfoodActivity extends BaseActivity {
-    @Bind(R.id.addFoodTitleBar)
-    TitleBar addFoodTitleBar;
+
 
     private ListView DetialFoodListView;
     private SimpleFoodAdapter simpleFoodAdapter;
@@ -72,7 +68,6 @@ public class AddfoodActivity extends BaseActivity {
 
     @Override
     public void initView() {
-        addFoodTitleBar.setTitle("膳食专家");
 
         iv_MSCForName = (ImageView) findViewById(R.id.iv_MSCForName);
         iv_MSCForWeight = (ImageView) findViewById(R.id.iv_MSCForWeight);

@@ -22,21 +22,20 @@
         android:theme="@style/Base.V7.Theme.AppCompat.Light" >
         <activity
             android:name=".ui.activity.MainActivity"
-            android:label="aty1" >
+            android:label="aty1" />
 
             <!-- android:screenOrientation="portrait"> -->
 
-        </activity>
-        <activity android:name=".ui.activity.BottomActivity" >
-        </activity>
+        <activity android:name=".ui.activity.BottomActivity" />
+
         <activity
             android:name=".ui.activity.AddfoodActivity"
-            android:label="@string/title_activity_addfood" >
-        </activity>
+            android:label="@string/title_activity_addfood" />
+
         <activity
             android:name=".ui.activity.AddelementActivity"
-            android:label="@string/title_activity_addelement" >
-        </activity>
+            android:label="@string/title_activity_addelement" />
+
         <activity android:name=".ui.activity.LaunchActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -46,8 +45,8 @@
         </activity>
         <activity
             android:name=".ui.activity.MylableActivity"
-            android:label="@string/title_activity_mylable" >
-        </activity>
+            android:label="@string/title_activity_mylable" />
+
     </application>
 
 </manifest>

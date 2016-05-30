@@ -9,7 +9,7 @@
     <com.halfcigarette.dietitian.ui.custom.TitleBar
         android:id="@+id/me_title_bar"
         android:layout_width="fill_parent"
-        android:layout_height="50dp">
+        android:layout_height="@dimen/toolBarHigh">
 
     </com.halfcigarette.dietitian.ui.custom.TitleBar>
 

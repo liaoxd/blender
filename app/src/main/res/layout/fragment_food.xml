@@ -1,0 +1,99 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#f2f2f2"
+    android:orientation="vertical"
+
+    tools:context="com.halfcigarette.dietitian.ui.fragment.FoodFragment"
+    android:weightSum="1">
+
+    <com.halfcigarette.dietitian.ui.custom.TitleBar
+        android:id="@+id/food_title_bar"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/toolBarHigh" />
+
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center_vertical">
+                <TextView
+                    android:id="@+id/change_people"
+                    android:text="更改用餐人"
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="right"/>
+                <at.markushi.ui.CircleButton
+                    android:id="@+id/start"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_weight="1"
+                    app:cb_color="#99CC00"
+                    app:cb_pressedRingWidth="8dip" />
+                <TextView
+                    android:id="@+id/for_dinner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="准备晚餐"
+                    android:layout_gravity="center_vertical" />
+            </LinearLayout>
+
+            <!-- 一条分割线
+            <Button
+                android:id="@+id/start"
+                android:layout_gravity="center"
+                android:layout_height="200dp"
+                android:layout_width="200dp"/>
+                -->
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="#ADADAD"/>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="25dp"
+                android:gravity="center"
+                android:text="营养提示"
+                android:textColor="#383838"
+                android:textSize="16dp" />
+
+
+            <TextView
+                android:id="@+id/reminder"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/textview_rectangle"
+                android:padding="4dp"
+                android:text="昨日矿物质摄入量较少，身体抵抗力也跟着逐步下降~
+同时也不利于家中小孩的生长发育，最好可以摄入一些。
+我们将为你推荐一些食材，补充矿物质含量~"
+                android:textColor="#383838" />
+
+            <!-- 一条分割线-->
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="#ADADAD"/>
+        </LinearLayout>
+        <ListView
+            android:id="@+id/recommend_food"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="2dp">
+        </ListView>
+
+</LinearLayout>

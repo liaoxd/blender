@@ -21,7 +21,7 @@
             <TextView
                 android:id="@+id/food_nameTV"
                 android:layout_width="wrap_content"
-                android:layout_height="20dp"
+                android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
                 android:text="猪肉炖粉条"
                 android:textColor="#383838"
