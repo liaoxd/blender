@@ -1,7 +1,6 @@
 package com.halfcigarette.dietitian.ui.fragment;
 
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
@@ -11,10 +10,7 @@ import android.widget.RelativeLayout;
 
 import com.halfcigarette.dietitian.R;
 import com.halfcigarette.dietitian.base.BaseFragment;
-import com.halfcigarette.dietitian.ui.activity.MylableActivity;
-import com.halfcigarette.dietitian.ui.custom.TitleBar;
 
-import butterknife.Bind;
 import butterknife.ButterKnife;
 
 /**
@@ -22,12 +18,31 @@ import butterknife.ButterKnife;
  */
 public class MeFragment extends BaseFragment {
 
-    @Bind(R.id.me_title_bar)
-    TitleBar me_title_bar;
-
     private View mLayoutView;
+    private RelativeLayout settings;
+    private RelativeLayout messageManage;
+    private RelativeLayout chooseTags;
+    private RelativeLayout aboutUs;
+    private View.OnClickListener listener = new View.OnClickListener(){
 
-    private RelativeLayout bt_mylableclick;
+        @Override
+        public void onClick(View v) {
+            switch (v.getId()){
+                case R.id.settings:
+
+                    break;
+                case R.id.about_us:
+
+                    break;
+                case R.id.choose_tags:
+
+                    break;
+                case R.id.message_manager:
+
+                    break;
+            }
+        }
+    };
 
     public MeFragment() {
         // Required empty public constructor
@@ -41,16 +56,15 @@ public class MeFragment extends BaseFragment {
 
     @Override
     public void initView() {
-        me_title_bar.setTitle("膳食专家");
-        bt_mylableclick = (RelativeLayout) mLayoutView.findViewById(R.id.bt_mylableclick);
-        bt_mylableclick.setOnClickListener(
-                new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
-                        startActivity(new Intent(getBaseActivity().getApplicationContext(), MylableActivity.class));
-                    }
-                }
-        );
+
+        settings = (RelativeLayout) mLayoutView.findViewById(R.id.settings);
+        settings.setOnClickListener(listener);
+        aboutUs = (RelativeLayout) mLayoutView.findViewById(R.id.about_us);
+        aboutUs.setOnClickListener(listener);
+        messageManage = (RelativeLayout) mLayoutView.findViewById(R.id.message_manager);
+        messageManage.setOnClickListener(listener);
+        chooseTags = (RelativeLayout) mLayoutView.findViewById(R.id.choose_tags);
+        chooseTags.setOnClickListener(listener);
     }
 
     @Override
@@ -72,6 +86,4 @@ public class MeFragment extends BaseFragment {
         super.onDestroyView();
         System.gc();
     }
-
-
 }
