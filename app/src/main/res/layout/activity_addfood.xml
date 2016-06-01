@@ -4,14 +4,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context="com.halfcigarette.dietitian.ui.activity.AddfoodActivity">
-    <!--
-    <com.halfcigarette.dietitian.ui.custom.TitleBar
-        android:id="@+id/addFoodTitleBar"
-        android:layout_width="fill_parent"
-        android:layout_height="@dimen/toolBarHigh">
 
-    </com.halfcigarette.dietitian.ui.custom.TitleBar>
-    -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="@dimen/toolBarHigh"
@@ -131,7 +124,7 @@
                 android:layout_width="0dp"
                 android:layout_height="50dp"
                 android:layout_weight="1"
-                android:background="#26a69a"
+                android:background="@color/theme_color"
                 android:onClick="OnClick"
                 android:text="确认" />
 
@@ -140,7 +133,7 @@
                 android:layout_width="0dp"
                 android:layout_height="50dp"
                 android:layout_weight="1"
-                android:background="#26a69a"
+                android:background="@color/theme_color"
                 android:onClick="OnClick"
                 android:text="清空" />
         </LinearLayout>

@@ -23,12 +23,11 @@ import com.github.mikephil.charting.data.PieData;
 import com.github.mikephil.charting.data.PieDataSet;
 import com.halfcigarette.dietitian.R;
 import com.halfcigarette.dietitian.base.BaseFragment;
+import com.halfcigarette.dietitian.beans.NutritionElement;
 import com.halfcigarette.dietitian.beans.Tags;
 import com.halfcigarette.dietitian.data.HorizontalPeopleAdapter;
 import com.halfcigarette.dietitian.data.NutritionAdapter;
-import com.halfcigarette.dietitian.beans.NutritionElement;
 import com.halfcigarette.dietitian.data.StaticData;
-import com.halfcigarette.dietitian.ui.custom.TitleBar;
 import com.halfcigarette.dietitian.ui.dialog.AddPersonDialog;
 import com.halfcigarette.dietitian.ui.dialog.RecordAnalyzeDialog;
 
@@ -36,15 +35,14 @@ import java.lang.reflect.Field;
 import java.util.ArrayList;
 import java.util.HashMap;
 
-import butterknife.Bind;
 import butterknife.ButterKnife;
 
 /**
  * A simple {@link Fragment} subclass.
  */
 public class RecordFragment extends BaseFragment {
-    @Bind(R.id.record_title_bar)
-    TitleBar record_title_bar;
+    //@Bind(R.id.record_title_bar)
+    //TitleBar record_title_bar;
 
     private View mLayoutView;
     private PieChart pieChart;
@@ -71,7 +69,7 @@ public class RecordFragment extends BaseFragment {
 
     @Override
     public void initView() {
-        record_title_bar.setTitle("膳食专家");
+        //record_title_bar.setTitle("膳食专家");
 
         Field[] fields;
         //食物数据转换成营养数据

@@ -18,18 +18,16 @@ import com.halfcigarette.dietitian.beans.Tags;
 import com.halfcigarette.dietitian.data.SimpleFoodAdapter;
 import com.halfcigarette.dietitian.data.StaticData;
 import com.halfcigarette.dietitian.ui.activity.AddfoodActivity;
-import com.halfcigarette.dietitian.ui.custom.TitleBar;
 import com.halfcigarette.dietitian.utils.Logger;
 
 import at.markushi.ui.CircleButton;
-import butterknife.Bind;
 import butterknife.ButterKnife;
 
 
 public class FoodFragment extends BaseFragment {
 
-    @Bind(R.id.food_title_bar)
-    TitleBar food_title_bar;
+    //@Bind(R.id.food_title_bar)
+    //TitleBar food_title_bar;
 
     private View mLayoutView;
 
@@ -50,7 +48,7 @@ public class FoodFragment extends BaseFragment {
     @TargetApi(Build.VERSION_CODES.HONEYCOMB)
     @Override
     public void initView() {
-        food_title_bar.setTitle("膳食专家");
+        //food_title_bar.setTitle("膳食专家");
 
         start = (CircleButton) mLayoutView.findViewById(R.id.start);
         recommendCookFood = (ListView) mLayoutView.findViewById(R.id.recommend_food);
