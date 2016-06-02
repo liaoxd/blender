@@ -7,7 +7,6 @@ import android.os.Message;
 import android.util.Log;
 import android.view.Menu;
 import android.view.View;
-import android.view.Window;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.ListView;
@@ -63,7 +62,7 @@ public class AddfoodActivity extends BaseActivity {
     @Override
     public void initContentView() {
         setContentView(R.layout.activity_addfood);
-        getWindow().setFeatureInt(Window.FEATURE_CUSTOM_TITLE, R.layout.addfoodtitle_bar);
+        //getWindow().setFeatureInt(Window.FEATURE_CUSTOM_TITLE, R.layout.addfoodtitle_bar);
     }
 
     @Override

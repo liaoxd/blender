@@ -27,6 +27,8 @@
             <!-- android:screenOrientation="portrait"> -->
 
         <activity android:name=".ui.activity.BottomActivity" />
+        <activity
+            android:name=".ui.activity.InfoManager" />
 
         <activity
             android:name=".ui.activity.AddfoodActivity"

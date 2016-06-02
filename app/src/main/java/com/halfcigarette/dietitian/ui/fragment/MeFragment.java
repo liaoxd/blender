@@ -1,6 +1,7 @@
 package com.halfcigarette.dietitian.ui.fragment;
 
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
@@ -10,6 +11,8 @@ import android.widget.RelativeLayout;
 
 import com.halfcigarette.dietitian.R;
 import com.halfcigarette.dietitian.base.BaseFragment;
+import com.halfcigarette.dietitian.ui.activity.InfoManager;
+import com.halfcigarette.dietitian.ui.activity.SettingsActivity;
 
 import butterknife.ButterKnife;
 
@@ -20,7 +23,7 @@ public class MeFragment extends BaseFragment {
 
     private View mLayoutView;
     private RelativeLayout settings;
-    private RelativeLayout messageManage;
+    private RelativeLayout infoManage;
     private RelativeLayout chooseTags;
     private RelativeLayout aboutUs;
     private View.OnClickListener listener = new View.OnClickListener(){
@@ -29,7 +32,7 @@ public class MeFragment extends BaseFragment {
         public void onClick(View v) {
             switch (v.getId()){
                 case R.id.settings:
-
+                    startActivity(new Intent(mLayoutView.getContext(), SettingsActivity.class));
                     break;
                 case R.id.about_us:
 
@@ -37,8 +40,8 @@ public class MeFragment extends BaseFragment {
                 case R.id.choose_tags:
 
                     break;
-                case R.id.message_manager:
-
+                case R.id.info_manager:
+                    startActivity(new Intent(mLayoutView.getContext(), InfoManager.class));
                     break;
             }
         }
@@ -61,8 +64,8 @@ public class MeFragment extends BaseFragment {
         settings.setOnClickListener(listener);
         aboutUs = (RelativeLayout) mLayoutView.findViewById(R.id.about_us);
         aboutUs.setOnClickListener(listener);
-        messageManage = (RelativeLayout) mLayoutView.findViewById(R.id.message_manager);
-        messageManage.setOnClickListener(listener);
+        infoManage = (RelativeLayout) mLayoutView.findViewById(R.id.info_manager);
+        infoManage.setOnClickListener(listener);
         chooseTags = (RelativeLayout) mLayoutView.findViewById(R.id.choose_tags);
         chooseTags.setOnClickListener(listener);
     }
