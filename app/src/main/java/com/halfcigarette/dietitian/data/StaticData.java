@@ -1,6 +1,7 @@
 package com.halfcigarette.dietitian.data;
 
 import com.halfcigarette.dietitian.beans.Cook;
+import com.halfcigarette.dietitian.beans.Families;
 import com.halfcigarette.dietitian.beans.NutritionElement;
 import com.halfcigarette.dietitian.beans.People;
 import com.halfcigarette.dietitian.beans.Tags;
@@ -46,6 +47,9 @@ public class StaticData {
 
     //存储用餐人信息
     public static List<People> peopleList = new ArrayList<>();
+
+    //存储Families信息
+    public static List<Families> families = new ArrayList<>();
 
     //用户添加的食物的总卡路里
     public static int allCalorie = 0;

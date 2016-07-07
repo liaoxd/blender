@@ -12,7 +12,7 @@ import android.widget.TextView;
 
 import com.gc.materialdesign.views.ButtonRectangle;
 import com.halfcigarette.dietitian.R;
-import com.halfcigarette.dietitian.beans.People;
+import com.halfcigarette.dietitian.beans.Families;
 import com.halfcigarette.dietitian.data.StaticData;
 import com.halfcigarette.dietitian.webViewUtils.LoopView;
 import com.halfcigarette.dietitian.webViewUtils.OnItemSelectedListener;
@@ -147,9 +147,11 @@ public class AddPersonDialog extends AlertDialog {
             public void onClick(View v) {
                 try {
                     boolean sex;
+                    String gender;
                     Integer age;
                     Integer weight;
                     sex = (list1.get(index1) == "男") ? true : false;
+                    gender = sex? "male":"female";
                     String regEx = "[^0-9]";
                     String result = "";
                     String string = list2.get(index2);
@@ -168,7 +170,8 @@ public class AddPersonDialog extends AlertDialog {
                     }
                     age = Integer.parseInt(result);
 
-                    StaticData.peopleList.add(new People(sex, age, weight));
+                    StaticData.families.add(new Families(gender, age, weight));
+
                 } catch (Exception e) {
                     e.printStackTrace();
                 }

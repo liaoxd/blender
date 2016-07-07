@@ -15,6 +15,18 @@ public class Families {
     //乳母什么鬼
     private String physicalLevel;
 
+    public Families(String gender, int age, int weight) {
+        this.gender = gender;
+        this.age = age;
+        this.weight = weight;
+        nickName = "test";
+        height = 170;
+        irritability = "null";
+        isPregnancy = false;
+        timePregnancy = "null";
+        physicalLevel = "null";
+    }
+
     public String getNickName() {
         return nickName;
     }
