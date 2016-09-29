@@ -14,7 +14,7 @@
         android:gravity="center_vertical">
         <TextView
             android:id="@+id/add_food_back"
-            android:layout_width="100dp"
+            android:layout_width="50dp"
             android:layout_height="match_parent"
             android:layout_gravity="center_vertical"
             android:background="@color/theme_color"
@@ -28,14 +28,17 @@
             android:textSize="25dp"
             android:gravity="center_horizontal"
             android:text="烹饪"/>
-        <TextView
-            android:id="@+id/start_grade"
-            android:layout_width="100dp"
-            android:layout_height="match_parent"
-            android:background="@color/theme_color"
-            android:textSize="15dp"
-            android:gravity="center"
-            android:text="开始评价"/>
+
+    <TextView
+        android:id="@+id/start_grade"
+        android:layout_width="80dp"
+        android:layout_height="match_parent"
+        android:background="@color/theme_color"
+        android:textSize="15dp"
+        android:gravity="center"
+        android:text=""/>
+
+
     </LinearLayout>
 
     <LinearLayout
